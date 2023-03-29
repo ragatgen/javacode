@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class CreateAksCluster {
+
+    public static void main(String[] args) throws Exception {
+
+        // Set up input scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for AKS cluster configuration
+        System.out.print("Enter the resource group name: ");
+        String resourceGroupName = scanner.nextLine();
+
+        System.out.print("Enter the AKS cluster name: ");
+        String clusterName = scanner.nextLine();
+
+        System.out.print("Enter the region (e.g. eastus): ");
+        String regionName = scanner.nextLine();
+
+        System.out.print("Enter the node count: ");
+        int nodeCount = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Enter the node size (e.g. Standard_D2s_v3): ");
+        String nodeSize = scanner.nextLine();
+
+        System.out.print("Enter the Kubernetes version (e.g. 1.21.5): ");
+        String kubernetesVersion = scanner.nextLine();
+
+        System.out.print("Enter the DNS prefix: ");
+        String dnsPrefix = scanner.nextLine();
+
+        // Set up Azure credentials and authenticate
+        // ...
+
+        // Create AKS cluster
+        // ...
+    }
+}
